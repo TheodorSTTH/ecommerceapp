@@ -8,6 +8,7 @@ export default function signin() {
         .signInWithPopup(new firebase.auth.GithubAuthProvider);
         console.log({...userCredentials});
         firebase.firestore().collection("users").doc(userCredentials.user.uid).set({ 
+            cart: {},
             uid: userCredentials.user.uid,
             email: userCredentials.user.email,
             name: userCredentials.user.displayName,
