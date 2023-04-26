@@ -2,7 +2,6 @@ import H2 from "@/components/H2";
 import firebase from "@/firebase/firebaseClient"
 import { useState } from "react";
 
-const auth = firebase.auth();
 export default function myprofile({}) {
     const [user, setUser] = useState(null)
     firebase.auth().onAuthStateChanged((user) => {

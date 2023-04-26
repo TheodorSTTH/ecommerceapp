@@ -9,7 +9,6 @@ import firebase from "@/firebase/firebaseClient"
 export default function Checkout() {
     const [paidFor, setPaidFor] = useState(false);
     const [loaded, setLoaded] = useState(false);
-
     const paypalRef = useRef(null);
     let paypalButtons = useRef(null);
     let hasRun = false;
@@ -87,11 +86,7 @@ export default function Checkout() {
                     </H1>
                     <ShoppingCart />
                     <div ref={paypalRef}></div>
-                    <div>
-                        <p>sb-gfj4p25768692@personal.example.com</p>
-                        <p>cWI0gIe*</p>
-                        <p>4733039990</p>
-                    </div>
+                    <p>(PS: payment with PayPal does not work online due to me being unable to create a live PayPal project as i am underage)</p>
                 </div>
             )}
         </div>
