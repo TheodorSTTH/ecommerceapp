@@ -87,6 +87,11 @@ export default function Checkout() {
                     </H1>
                     <ShoppingCart />
                     <div ref={paypalRef}></div>
+                    <div>
+                        <p>sb-gfj4p25768692@personal.example.com</p>
+                        <p>cWI0gIe*</p>
+                        <p>4733039990</p>
+                    </div>
                 </div>
             )}
         </div>
